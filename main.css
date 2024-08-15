@@ -127,10 +127,14 @@ i {
     padding: 5px;
 }
 
-.whatido p, .projects p{
-    padding-right: 50%;
+.whatido p{
+    padding-right: 60%;
     padding-bottom: 5px;
-    max-width: 40vw;
+}
+
+.projects p{
+    padding-left: 60%;
+    padding-bottom: 5px;
 }
 
 .projects {
