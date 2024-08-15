@@ -127,20 +127,16 @@ i {
     padding: 5px;
 }
 
-.whatido p{
-    padding-right: 25%;
+.whatido p, .projects p{
+    padding-right: 50%;
     padding-bottom: 5px;
+    max-width: 40vw;
 }
 
 .projects {
     background-color: rgb(100, 100, 100);
     text-align: right;
     text-decoration: none;
-}
-
-.projects p {
-    padding-left: 25%;
-    padding-bottom: 5px;
 }
 
 .info {
