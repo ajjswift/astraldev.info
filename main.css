@@ -165,3 +165,54 @@ i {
     text-decoration: underline;
     color: rgb(72, 198, 236);
 }
+
+@media (max-width: 768px) {
+    .landing h1 {
+        font-size: 2.5em;
+    }
+
+    .landing p {
+        width: 80vw;
+        font-size: 1em;
+    }
+
+    .skills, .whatido, .projects {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .skills .skill-box {
+        width: 150px;
+        height: 80px;
+    }
+
+    .whatido p, .projects p {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+}
+
+@media (max-width: 480px) {
+    .landing h1 {
+        font-size: 2em;
+    }
+
+    .landing p {
+        width: 90vw;
+        font-size: 0.9em;
+    }
+
+    .skills .skill-box {
+        width: 120px;
+        height: 70px;
+    }
+
+    .whatido p, .projects p {
+        padding-right: 2%;
+        padding-left: 2%;
+    }
+
+    .projects {
+        text-align: center;
+    }
+}
