@@ -7,122 +7,118 @@
     <title>Astral Development</title>
     <meta name="Portfolio for AstralSytnax" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="/main.css">
     <script src="https://kit.fontawesome.com/5b191a7148.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="landing">
-        <div>
-            <h1>AstralSyntax</h1>
-            <p>Hello, I’m Astral, a passionate part-time developer with a flair for crafting unique digital experiences.
-                My journey spans a variety of exciting projects, each showcasing my dedication to innovation and
-                creativity.</p>
-            <div class="socials">
-                <a href="https://github.com/Astral-Syntax" class="fa-brands fa-github" target="_blank"></a>
-                <a href="https://discord.com/users/885110014094737428" class="fa-brands fa-discord" target="_blank"></a>
-                <a href="mailto:astralsyntax@summersoftstudios.com" class="fa-solid fa-envelope" target="_blank"></a>
+<body class="font-sans text-white bg-zinc-900" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">
+    <div class="flex flex-col justify-center items-center w-screen h-screen">
+        <img src="bg.jpg" class="w-screen h-screen fixed z-[-1] opacity-[50%]">
+        <div class="w-full flex flex-col justify-center items-center">
+            <h1 class="text-4xl text-center md:text-5xl mb-2 w-2/3">AstralSyntax</h1>
+            <p class="text-lg text-center md:text-xl mb-2 w-2/3">Hello, I'm Astral, a passionate part-time developer with a flair for crafting unique digital experiences. My journey spans a variety of exciting projects, each showcasing my dedication to innovation and creativity.</p>
+            <div class="socials flex justify-center gap-12">
+                <a href="https://github.com/Astral-Syntax" 
+                class="fa-brands fa-github text-3xl transition-all duration-200 hover:scale-[120%]" 
+                target="_blank"></a>
+                <a href="https://discord.com/users/885110014094737428" 
+                class="fa-brands fa-discord text-3xl transition-all duration-200 hover:scale-[120%]" 
+                target="_blank"></a>
+                <a href="mailto:astralsyntax@summersoftstudios.com" 
+                class="fa-solid fa-envelope text-3xl transition-all duration-200 hover:scale-[120%]" 
+                target="_blank"></a>
             </div>
         </div>
-        <div class="arrow"></div>
+        <div class="fa-solid fa-chevron-down absolute bottom-4 text-4xl animate-bounce"></div>
     </div>
 
-    <div class="skills">
-        <h2>My Skills</h2>
-        <div class="skill-box">
-            <i class="fa-brands fa-html5"></i>
-            <h3>HTML5</h3>
-        </div>
-        <div class="skill-box">
-            <i class="fa-brands fa-css3-alt"></i>
-            <h3>CSS</h3>
-        </div>
-        <div class="skill-box">
-            <img src="/clogo.png" alt="" class="cico">
-            <h3>C++</h3>
-        </div>
-        <div class="skill-box">
-            <img src="/ur5.png" alt="" class="ur5ico">
-            <h3>Unreal Engine 5</h3>
-        </div>
-        <div class="skill-box">
-            <img src="/bqico.png" alt="" class="bqico">
-            <h3>BetonQuest</h3>
-        </div>
-        <div class="skill-box">
-            <img src="/sk.png" alt="" class="skico">
-            <h3>Skript</h3>
-        </div>
-        <div class="skill-box">
-            <i class="fa-solid fa-code"></i>
-            <h3>Sys Admin</h3>
-        </div>
-
-    </div>
-
-    <div class="whatido">
-        <div class="container">
-            <p class="container-title">Here are some of the things I do!</p>
-            <div class="gradient-cards">
-                <div class="card">
-                    <div class="container-card bg-green-box">
-                        <p class="card-title">Minecraft Server Development</p>
-                        <p class="card-description">Comprehensive server setups and management.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="container-card bg-white-box">
-                        <p class="card-title">Skript Packages</p>
-                        <p class="card-description">Custom scripts via the Skript plugin to enhance gameplay.</p>
-                    </div>
-                </div>
-                 <div class="card">
-                    <div class="container-card bg-yellow-box">
-                        <p class="card-title">BetonQuest Packages</p>
-                        <p class="card-description">Complex quest systems for engaging adventures.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="container-card bg-blue-box">
-                        <p class="card-title">Web Development</p>
-                        <p class="card-description">I do basic html / css web development also!</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="container-card bg-blue-box">
-                        <p class="card-title">Game Development</p>
-                        <p class="card-description">Beyond Minecraft, I channel my creativity into game development with my studio, <a href="https://discord.gg/KXpb9NEME4" target="_blank">Summersoft Studios</a>.</p>
-                    </div>
-                </div>
+    <div class="skills bg-zinc-900 text-center py-12 flex flex-col items-center rounded-br-[12rem] relative z-10">
+        <h2 class="text-4xl md:text-5xl">My Skills</h2>
+        <div class="w-1/2 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 justify-items-center mt-8">
+            <div class="skill-box flex flex-col items-center justify-center w-48 h-24 bg-transparent">
+                <i class="fa-brands fa-html5 text-6xl"></i>
+                <h3 class="text-xl mt-2">HTML5</h3>
+            </div>
+            <div class="skill-box flex flex-col items-center justify-center w-48 h-24 bg-transparent">
+                <i class="fa-brands fa-css3-alt text-6xl"></i>
+                <h3 class="text-xl mt-2">CSS</h3>
+            </div>
+            <div class="skill-box flex flex-col items-center justify-center w-48 h-24 bg-transparent">
+                <img src="clogo.png" alt="C++" class="h-12 grayscale invert brightness-[90%]">
+                <h3 class="text-xl mt-2">C++</h3>
+            </div>
+            <div class="skill-box flex flex-col items-center justify-center w-48 h-24 bg-transparent">
+                <img src="ur5.png" alt="Unreal Engine 5" class="h-14 filter invert">
+                <h3 class="text-xl mt-2">Unreal Engine 5</h3>
+            </div>
+            <div class="skill-box flex flex-col items-center justify-center w-48 h-24 bg-transparent">
+                <img src="bqico.png" alt="BetonQuest" class="h-12 grayscale">
+                <h3 class="text-xl mt-2">BetonQuest</h3>
+            </div>
+            <div class="skill-box flex flex-col items-center justify-center w-48 h-24 bg-transparent">
+                <img src="sk.png" alt="Skript" class="h-12 grayscale">
+                <h3 class="text-xl mt-2">Skript</h3>
+            </div>
+            <div class="skill-box flex flex-col items-center justify-center w-48 h-24 bg-transparent">
+                <i class="fa-solid fa-code text-6xl"></i>
+                <h3 class="text-xl mt-2">Sys Admin</h3>
             </div>
         </div>
     </div>
-    <div class="projects">
-        <h2>Projects and Collaborations</h2>
+    <div class="flex flex-col -my-[12rem] p-0 bg-zinc-900">
+        <div class="h-[12rem] bg-violet-500 -my-[2px]"></div>
+        <div class="h-[12rem] bg-violet-500 rounded-br-[2rem] rounded-tl-[2rem]"></div>
+        <div class="h-[12rem] bg-violet-500"></div>
+        <div class="whatido pt-12 bg-zinc-900 z-[0] relative -my-[12.15rem] rounded-tl-[12rem] mb-[0rem]">
+            <div class="container max-w-5xl mx-auto">
+                <p class="container-title text-4xl font-semibold text-white text-center">Here are some of the things I do!</p>
+                <div class="grid grid-cols-3 py-12 gap-4">
+                    <div class="bg-zinc-800 flex flex-col justify-between rounded-2xl p-6 transition-all duration-200 border-4 border-transparent hover:border-purple-500">
+                        <p class="card-title text-white text-2xl font-semibold text-left whitespace-nowrap">Minecraft Servers</p>
+                        <p class="card-description text-gray-200 text-left mt-2">Comprehensive server setups and management.</p>
+                    </div>
+                    <div class="bg-zinc-800 flex flex-col justify-between rounded-2xl p-6 transition-all duration-200 border-4 border-transparent hover:border-purple-500">
+                        <p class="card-title text-white text-2xl font-semibold text-left whitespace-nowrap">Skript Packages</p>
+                        <p class="card-description text-gray-200 text-left mt-2">Custom scripts via the Skript plugin to enhance gameplay.</p>
+                    </div>
+                    
+                    <div class="bg-zinc-800 flex flex-col justify-between rounded-2xl p-6 transition-all duration-200 border-4 border-transparent hover:border-purple-500">
+                        <p class="card-title text-white text-2xl font-semibold text-left whitespace-nowrap">BetonQuest Packages</p>
+                        <p class="card-description text-gray-200 text-left mt-2">Complex quest systems for engaging adventures.</p>
+                    </div>
+                    <div class="bg-zinc-800 flex flex-col justify-between rounded-2xl p-6 transition-all duration-200 border-4 border-transparent hover:border-purple-500">
+                        <p class="card-title text-white text-2xl font-semibold text-left whitespace-nowrap">Web Development</p>
+                        <p class="card-description text-gray-200 text-left mt-2">I do basic html / css web development also!</p>
+                    </div>
+                    
+                    <div class="col-span-2 bg-zinc-800 flex flex-col justify-between rounded-2xl p-6 transition-all duration-200 border-4 border-transparent hover:border-purple-500">
+                        <p class="card-title text-white text-2xl font-semibold text-left whitespace-nowrap">Game Development</p>
+                        <p class="card-description text-gray-200 text-left mt-2">Beyond Minecraft, I channel my creativity into game development with my studio, <a href="https://discord.gg/KXpb9NEME4" class="font-bold">Summersoft Studios</a>.</p>
+                    </div>
+                    <div class="col-span-2 bg-zinc-800 flex flex-col justify-between rounded-2xl p-6 transition-all duration-200 border-4 border-transparent hover:border-purple-500">
+                        <p class="card-title text-white text-2xl font-semibold text-left whitespace-nowrap">Create SMP</p>
+                        <p class="card-description text-gray-200 text-left mt-2">Discover CreateSMP, an innovative public server featuring the Create: Perfect World modpack enhanced with carefully selected additional mods...</p>
+                        <a href="https://www.discord.gg/Z4WA56dWGJ" target="_blank"><button class="w-fit bg-white text-zinc-950 my-2 py-2 px-8 rounded-lg">More Info</button></a>
+                    </div>
+                    <div class="col-span-1 bg-zinc-800 flex flex-col justify-between rounded-2xl p-6 transition-all duration-200 border-4 border-transparent hover:border-purple-500">
+                        <p class="card-title text-white text-2xl font-semibold text-left whitespace-nowrap">BrassByte</p>
+                        <p class="card-description text-gray-200 text-left mt-2">I make Premade Minecraft Servers over at BrassByte! </p>
+                        <a href="https://www.discord.gg/xJYwn4gJme" target="_blank"><button class="w-fit bg-white text-zinc-950 my-2 py-2 px-8 rounded-lg">Check them out</button></a>
+                    </div>
+                    <div class="col-span-3 bg-zinc-800 flex flex-col justify-between rounded-2xl p-6 transition-all duration-200 border-4 border-transparent hover:border-purple-500">
+                        <p class="card-title text-white text-2xl font-semibold text-left whitespace-nowrap">Interdimensional Market</p>
+                        <p class="card-description text-gray-200 text-left mt-2">Interdimensional Market is a captivating Tycoon/Simulation game set across the vibrant tapestry of multi-dimensional space...</p>
+                        <a href="https://www.discord.gg/KXpb9NEME4" target="_blank"><button class="w-fit bg-white text-zinc-950 my-2 py-2 px-8 rounded-lg">More Info</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <h3>Interdimensional Market</h3>
-        <p>Interdimensional Market is a captivating Tycoon/Simulation game set across the vibrant tapestry of
-            multi-dimensional space. As the owner of a customizable store, you'll navigate an ever-shifting landscape,
-            buying and selling goods to a diverse array of interdimensional travelers. Your goal is to strategically
-            upgrade and expand your shop, turning it into a thriving hub of commerce amidst the cosmos.</p>
-        <a href="https://www.discord.gg/KXpb9NEME4" target="_blank" class="info">More Info</a>
-
-        <h3>CreateSMP</h3>
-        <p>Discover CreateSMP, an innovative public server featuring the Create: Perfect World modpack enhanced with
-            carefully selected additional mods. Explore the limitless possibilities of Create: Perfect World and beyond
-            by joining us today! Delve into the world of CreateSMP and experience the ultimate blend of creativity and
-            adventure. Ready to embark on your journey? Join us now!</p>
-        <a href="https://www.discord.gg/Z4WA56dWGJ" target="_blank" class="info">More Info</a>
-
-        <h3>BrassByte</h3>
-        <p>I make Premade Minecraft Servers over at BrassByte! Check them out here</p>
-        <a href="https://www.discord.gg/xJYwn4gJme" target="_blank" class="info">More Info</a>
+        <div class="bg-zinc-950 py-6 text-center">
+            <p>&copy; 2024 Astral Development. All Rights Reserved.</p>
+        </div>
     </div>
-
-    <div class="footer">
-        <p>Made by AstralSyntax 2024 | <a href="https://billing.solsticehosting.co.uk/aff.php?aff=7"
-                class="footerlink">Get a Minecraft Server from Solstice!</a></p>
-    </div>
+    
 </body>
 
 </html>
